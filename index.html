@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Memory Game</title>
+    <meta name="description" content="Memory Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-coda.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/app-2.css" />
+    <link rel="stylesheet" href="css/app-1.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body id="gamearea">
+    <div id="main-box">
+      <div>
+        <h1 class="wtmg">
+          Welcome To <span class="text1">Matching</span> Game
+        </h1>
+        <h3 class="load">Loading Please Wait.....</h3>
+      </div>
+      <div></div>
+    </div>
+    <div class="container">
+      <header>
+        <h1 class="jdl">Matching Game</h1>
+      </header>
+      
+      <section class="score-panel">
+          <div class="test">
+              <label class="pn" for="player-name"
+              ><span id="displayname">Player</span></label
+              >
+              <p>Health : <span id="livesDisplay">❤️❤️❤️</span></p>
+          <div class="player-name">
+            <input
+              class="name"
+              id="playername"
+              type="text"
+              placeholder="Your Name"
+            />
+            <button class="click" id="startgame" type="submit">Play</button>
+          </div>
+        </div>
+        <div>
+            <select name="bgchanges" id="bgchanges">
+                <option value="/img/1119441.jpg">Pemrograman</option>
+                <option value="/img/bggame.jpg">Game</option>
+                <option value="/img/bubuk.jpg">Anime 1</option>
+                <option value="/img/geometry2.png">Geometry</option>
+                <option value="/img/huaa.jpg">Anime 2</option>
+                <option value="/img/sad.jpg">Sad Code</option>
+            </select>
+        </div>
+        <ul class="stars"></ul>
+
+        <span id="moves">0</span> Moves
+
+        <div class="panel-right">
+          <span id="timer">0</span> Seconds
+
+          <span id="restart">
+            <i class="fa fa-repeat"></i>
+          </span>
+        </div>
+      </section>
+      <div class="box-content">
+        <div class="gc">
+          <h2>How To Play</h2>
+          <ul>
+            <li>Press one of the cards to reveal the image</li>
+            <li>Match the cards when they are flipped over</li>
+            <li>If wrong, the player's life decreases</li>
+            <li>After all the cards are matched, the player will win</li>
+          </ul>
+        </div>
+        <ul class="deck"></ul>
+      </div>
+    </div>
+
+    <script src="js/jQuery-file.js"></script>
+    <script src="js/versed.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
